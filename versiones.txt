@@ -1,0 +1,2 @@
+php: 7.3.26
+mariaDB: 10.4.17-MariaDB o MySql 5.7
