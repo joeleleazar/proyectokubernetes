@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: apachekub
+spec:
+  servicename: apachekub
+  replicas: 3
+  selector:
+    matchLabels:
+      app: proyectokubernetes
+  template:
+    metadata:
+      labels:
+        app: proyectokubernetes
+    spec:
+      containers:
+      - name: apache
+        image: joeleleazar/proyectokubernetes
+        volumeMounts:
+        - name: data-vol
+          mountPath: /var/www/html/data
+        ports:
+        - containerPort: 80
