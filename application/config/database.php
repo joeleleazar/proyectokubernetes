@@ -74,9 +74,9 @@ $active_group = 'default';
 $query_builder = TRUE;
 
 $db['default'] = array(
-	'dsn'	=> '10.0.10.72',
+	'dsn'	=> '',
 	'port' => '3306',
-	'hostname' => 'localhost',
+	'hostname' => '10.0.10.72',
 	'username' => 'root',
 	'password' => 'root',
 	'database' => 'proyectojt',
