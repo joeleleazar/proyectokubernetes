@@ -4,7 +4,7 @@ metadata:
   name: apachekub
 spec:
   servicename: apachekub
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: proyectokubernetes
@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: apache
-        image: joeleleazar/proyectokubernetes
+        image: joeleleazar/proyectokubernetes:latest
         volumeMounts:
         - name: data-vol
           mountPath: /var/www/html/data
